@@ -1,0 +1,11 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: sandbox-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sandbox_db
+      MYSQL_USER: app
+      MYSQL_PASSWORD: app
+    ports:
+      - "3306:3306"
