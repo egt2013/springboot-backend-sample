@@ -25,8 +25,6 @@ public class Plan {
     @Column(nullable = false)
     private String name;
 
-
-//    active (default true)
     @NotNull
     @Min(1)
     @Column(nullable = false)
